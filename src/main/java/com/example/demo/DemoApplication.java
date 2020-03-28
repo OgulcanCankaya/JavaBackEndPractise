@@ -21,7 +21,7 @@ public class DemoApplication {
     return String.format("Hello %s!", name);
     }
     @GetMapping("/naber")
-    public String naber(@RequestParam(value = "name",defaultValue = "Tırreq") String name){
+    public String naber(@RequestParam(value = "name",defaultValue = "delidumrul") String name){
         return String.format("Naber la %s!\n",name);
     }
     @RequestMapping(value = "/")
