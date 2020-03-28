@@ -24,6 +24,10 @@ public class DemoApplication {
     public String naber(@RequestParam(value = "name",defaultValue = "Tırreq") String name){
         return String.format("Naber la %s!\n",name);
     }
-  
+    @RequestMapping(value = "/")
+    public String page(){
+        return "main";
+    }
+
 }
             
